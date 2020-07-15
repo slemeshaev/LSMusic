@@ -13,6 +13,8 @@
 		66066ACF24BED83E00D685D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66066ACD24BED83E00D685D1 /* Main.storyboard */; };
 		66066AD124BED83E00D685D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66066AD024BED83E00D685D1 /* Assets.xcassets */; };
 		66066AD424BED83E00D685D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66066AD224BED83E00D685D1 /* LaunchScreen.storyboard */; };
+		66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADB24BED90500D685D1 /* MainTabBarController.swift */; };
+		66066ADE24BEDD9B00D685D1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADD24BEDD9B00D685D1 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		66066AD024BED83E00D685D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66066AD324BED83E00D685D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66066AD524BED83E00D685D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66066ADB24BED90500D685D1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		66066ADD24BEDD9B00D685D1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				66066AC724BED83E00D685D1 /* AppDelegate.swift */,
 				66066AC924BED83E00D685D1 /* SceneDelegate.swift */,
+				66066ADD24BEDD9B00D685D1 /* SearchViewController.swift */,
 				66066ACB24BED83E00D685D1 /* ViewController.swift */,
+				66066ADB24BED90500D685D1 /* MainTabBarController.swift */,
 				66066ACD24BED83E00D685D1 /* Main.storyboard */,
 				66066AD024BED83E00D685D1 /* Assets.xcassets */,
 				66066AD224BED83E00D685D1 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66066ADE24BEDD9B00D685D1 /* SearchViewController.swift in Sources */,
 				66066ACC24BED83E00D685D1 /* ViewController.swift in Sources */,
 				66066AC824BED83E00D685D1 /* AppDelegate.swift in Sources */,
+				66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */,
 				66066ACA24BED83E00D685D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GWB2H668N;
 				INFOPLIST_FILE = LSMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = slemeshaev.LSMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GWB2H668N;
 				INFOPLIST_FILE = LSMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = slemeshaev.LSMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
