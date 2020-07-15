@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		66066AD424BED83E00D685D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66066AD224BED83E00D685D1 /* LaunchScreen.storyboard */; };
 		66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADB24BED90500D685D1 /* MainTabBarController.swift */; };
 		66066ADE24BEDD9B00D685D1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADD24BEDD9B00D685D1 /* SearchViewController.swift */; };
+		66F7D67424BF38830042589F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7D67324BF38830042589F /* SearchResponse.swift */; };
 		85EF1EB55B8A08122CCD9044 /* Pods_LSMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33818C6F609CC11E2D820C /* Pods_LSMusic.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		66066AD524BED83E00D685D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66066ADB24BED90500D685D1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		66066ADD24BEDD9B00D685D1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		66F7D67324BF38830042589F /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		9D33818C6F609CC11E2D820C /* Pods_LSMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20AE87D027290F95990FBFC /* Pods-LSMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMusic.debug.xcconfig"; path = "Target Support Files/Pods-LSMusic/Pods-LSMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		A67D7D23DCA96042E5E2987A /* Pods-LSMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMusic.release.xcconfig"; path = "Target Support Files/Pods-LSMusic/Pods-LSMusic.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				66066AC924BED83E00D685D1 /* SceneDelegate.swift */,
 				66066ADD24BEDD9B00D685D1 /* SearchViewController.swift */,
 				66066ACB24BED83E00D685D1 /* ViewController.swift */,
+				66F7D67324BF38830042589F /* SearchResponse.swift */,
 				66066ADB24BED90500D685D1 /* MainTabBarController.swift */,
 				66066ACD24BED83E00D685D1 /* Main.storyboard */,
 				66066AD024BED83E00D685D1 /* Assets.xcassets */,
@@ -94,7 +97,6 @@
 				A20AE87D027290F95990FBFC /* Pods-LSMusic.debug.xcconfig */,
 				A67D7D23DCA96042E5E2987A /* Pods-LSMusic.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -215,6 +217,7 @@
 			files = (
 				66066ADE24BEDD9B00D685D1 /* SearchViewController.swift in Sources */,
 				66066ACC24BED83E00D685D1 /* ViewController.swift in Sources */,
+				66F7D67424BF38830042589F /* SearchResponse.swift in Sources */,
 				66066AC824BED83E00D685D1 /* AppDelegate.swift in Sources */,
 				66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */,
 				66066ACA24BED83E00D685D1 /* SceneDelegate.swift in Sources */,
