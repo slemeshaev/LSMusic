@@ -15,6 +15,7 @@
 		66066AD424BED83E00D685D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66066AD224BED83E00D685D1 /* LaunchScreen.storyboard */; };
 		66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADB24BED90500D685D1 /* MainTabBarController.swift */; };
 		66066ADE24BEDD9B00D685D1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADD24BEDD9B00D685D1 /* SearchViewController.swift */; };
+		85EF1EB55B8A08122CCD9044 /* Pods_LSMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33818C6F609CC11E2D820C /* Pods_LSMusic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		66066AD524BED83E00D685D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66066ADB24BED90500D685D1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		66066ADD24BEDD9B00D685D1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9D33818C6F609CC11E2D820C /* Pods_LSMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20AE87D027290F95990FBFC /* Pods-LSMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMusic.debug.xcconfig"; path = "Target Support Files/Pods-LSMusic/Pods-LSMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		A67D7D23DCA96042E5E2987A /* Pods-LSMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMusic.release.xcconfig"; path = "Target Support Files/Pods-LSMusic/Pods-LSMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EF1EB55B8A08122CCD9044 /* Pods_LSMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BBFADA1F96EDC6D1AE820A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D33818C6F609CC11E2D820C /* Pods_LSMusic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		66066ABB24BED83D00D685D1 = {
 			isa = PBXGroup;
 			children = (
 				66066AC624BED83E00D685D1 /* LSMusic */,
 				66066AC524BED83E00D685D1 /* Products */,
+				D15C67D9CB47801561505077 /* Pods */,
+				0BBFADA1F96EDC6D1AE820A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +88,16 @@
 			path = LSMusic;
 			sourceTree = "<group>";
 		};
+		D15C67D9CB47801561505077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A20AE87D027290F95990FBFC /* Pods-LSMusic.debug.xcconfig */,
+				A67D7D23DCA96042E5E2987A /* Pods-LSMusic.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66066AD824BED83E00D685D1 /* Build configuration list for PBXNativeTarget "LSMusic" */;
 			buildPhases = (
+				9A2FAC7D799B7406C35B64A2 /* [CP] Check Pods Manifest.lock */,
 				66066AC024BED83E00D685D1 /* Sources */,
 				66066AC124BED83E00D685D1 /* Frameworks */,
 				66066AC224BED83E00D685D1 /* Resources */,
+				CB867D090C57D42DC0DE7B52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A2FAC7D799B7406C35B64A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB867D090C57D42DC0DE7B52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LSMusic/Pods-LSMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LSMusic/Pods-LSMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LSMusic/Pods-LSMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66066AC024BED83E00D685D1 /* Sources */ = {
@@ -290,6 +359,7 @@
 		};
 		66066AD924BED83E00D685D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20AE87D027290F95990FBFC /* Pods-LSMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +379,7 @@
 		};
 		66066ADA24BED83E00D685D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67D7D23DCA96042E5E2987A /* Pods-LSMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
