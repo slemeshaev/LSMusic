@@ -28,6 +28,9 @@ class SearchViewController: UIViewController, SearchDisplayLogic {
     // таймер
     private var timer: Timer?
     
+    // создаем footer View
+    private lazy var footerView = FooterView()
+    
     // MARK: Setup
     
     private func setup() {
@@ -64,18 +67,21 @@ class SearchViewController: UIViewController, SearchDisplayLogic {
     
     private func setupTableView() {
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
+        
         let nib = UINib(nibName: "TrackCell", bundle: nil)
         table.register(nib, forCellReuseIdentifier: TrackCell.reuseId)
+        table.tableFooterView = footerView
     }
     
     func displayData(viewModel: Search.Model.ViewModel.ViewModelData) {
         switch viewModel {
-        case .some:
-            print("viewcontroller .som")
         case .displayTracks(let searchViewModel):
             print("viewcontroller .displayTracks")
             self.searchViewModel = searchViewModel
             table.reloadData()
+            footerView.hideLoader()
+        case .displayFooterView:
+            footerView.showLoader()
         }
     }
     
@@ -100,6 +106,17 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         return 84
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.text = "Пожалуйста, введите поисковый запрос выше..."
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        return label
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return searchViewModel.cells.count > 0 ? 0 : 250
+    }
     
 }
 
