@@ -16,6 +16,8 @@
 		66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADB24BED90500D685D1 /* MainTabBarController.swift */; };
 		66066ADE24BEDD9B00D685D1 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADD24BEDD9B00D685D1 /* SearchMusicViewController.swift */; };
 		66E9995024C1F7FD0062F410 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9994F24C1F7FD0062F410 /* FooterView.swift */; };
+		66E9995324C200F10062F410 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9995224C200F10062F410 /* TrackDetailView.swift */; };
+		66E9995524C201080062F410 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E9995424C201080062F410 /* TrackDetailView.xib */; };
 		66F7D67424BF38830042589F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7D67324BF38830042589F /* SearchResponse.swift */; };
 		66F7D67624C198190042589F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7D67524C198190042589F /* NetworkService.swift */; };
 		66F7D68E24C1A65E0042589F /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7D68724C1A65E0042589F /* SearchPresenter.swift */; };
@@ -43,6 +45,8 @@
 		66066ADB24BED90500D685D1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		66066ADD24BEDD9B00D685D1 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
 		66E9994F24C1F7FD0062F410 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		66E9995224C200F10062F410 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
+		66E9995424C201080062F410 /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
 		66F7D67324BF38830042589F /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		66F7D67524C198190042589F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		66F7D68724C1A65E0042589F /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
@@ -125,9 +129,19 @@
 			path = FooterView;
 			sourceTree = "<group>";
 		};
+		66E9995124C200DC0062F410 /* TrackDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				66E9995424C201080062F410 /* TrackDetailView.xib */,
+				66E9995224C200F10062F410 /* TrackDetailView.swift */,
+			);
+			path = TrackDetailView;
+			sourceTree = "<group>";
+		};
 		66F7D67724C1A1660042589F /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				66E9995124C200DC0062F410 /* TrackDetailView */,
 				66E9994E24C1F7DE0062F410 /* FooterView */,
 				66F7D69A24C1DCAD0042589F /* Cell */,
 				66F7D69524C1ABFB0042589F /* SearchViewController.storyboard */,
@@ -245,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66066AD424BED83E00D685D1 /* LaunchScreen.storyboard in Resources */,
+				66E9995524C201080062F410 /* TrackDetailView.xib in Resources */,
 				66F7D69C24C1DCE20042589F /* TrackCell.xib in Resources */,
 				66066AD124BED83E00D685D1 /* Assets.xcassets in Resources */,
 				66F7D69624C1ABFB0042589F /* SearchViewController.storyboard in Resources */,
@@ -316,6 +331,7 @@
 				66066ACA24BED83E00D685D1 /* SceneDelegate.swift in Sources */,
 				66F7D68E24C1A65E0042589F /* SearchPresenter.swift in Sources */,
 				66F7D67624C198190042589F /* NetworkService.swift in Sources */,
+				66E9995324C200F10062F410 /* TrackDetailView.swift in Sources */,
 				66F7D69824C1B61F0042589F /* UIViewController+Storyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
