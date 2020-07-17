@@ -6,4 +6,11 @@
 //  Copyright © 2020 Станислав Лемешаев. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TrackDetailView: UIView {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+}
