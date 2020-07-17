@@ -1,5 +1,5 @@
 //
-//  SearchViewController.swift
+//  SearchMusicViewController.swift
 //  LSMusic
 //
 //  Created by Станислав Лемешаев on 15.07.2020.
