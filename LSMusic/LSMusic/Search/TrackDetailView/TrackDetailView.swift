@@ -75,7 +75,15 @@ class TrackDetailView: UIView {
             let durationTime = self?.player.currentItem?.duration
             let currentDurationText = ((durationTime ?? CMTimeMake(value: 1, timescale: 1)) - time).toDisplayString()
             self?.durationTimeLabel.text = "-\(currentDurationText)"
+            self?.updateCurrentTimeSlider()
         }
+    }
+    
+    private func updateCurrentTimeSlider() {
+        let currentTimeSeconds = CMTimeGetSeconds(player.currentTime())
+        let durationSeconds = CMTimeGetSeconds(player.currentItem?.duration ?? CMTimeMake(value: 1, timescale: 1))
+        let percentage = currentTimeSeconds / durationSeconds
+        self.currentTimeSlider.value = Float(percentage)
     }
     
     deinit {
@@ -110,12 +118,17 @@ class TrackDetailView: UIView {
     
     // регулировка текущего времени трека
     @IBAction func handleCurrentTimeSlider(_ sender: UISlider) {
-        //
+        let percentage = currentTimeSlider.value
+        guard let duration = player.currentItem?.duration else { return }
+        let durationInSeconds = CMTimeGetSeconds(duration)
+        let seekTimeInSeconds = Float64(percentage) * durationInSeconds
+        let seekTime = CMTimeMakeWithSeconds(seekTimeInSeconds, preferredTimescale: 1)
+        player.seek(to: seekTime)
     }
     
     // регулировка звука
     @IBAction func handleVolumeSlider(_ sender: UISlider) {
-        //
+        player.volume = volumeSlider.value
     }
     
     // свернуть текущее воспроизведение
