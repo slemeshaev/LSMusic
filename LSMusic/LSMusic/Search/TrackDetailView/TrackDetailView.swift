@@ -33,6 +33,7 @@ class TrackDetailView: UIView {
     }()
     
     weak var delegate: TrackMovingDelegate?
+    weak var tabBarDelegate: MainTabBarControllerDelegate?
     
     // MARK: - awakeFromNib
     override func awakeFromNib() {
@@ -140,7 +141,8 @@ class TrackDetailView: UIView {
     
     // свернуть текущее воспроизведение
     @IBAction func dragDownButtonTapped(_ sender: UIButton) {
-        self.removeFromSuperview()
+        self.tabBarDelegate?.minimizeTrackDetailController()
+        //self.removeFromSuperview()
     }
     
     // предыдущий трек

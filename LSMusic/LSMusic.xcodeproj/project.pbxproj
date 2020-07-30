@@ -16,6 +16,7 @@
 		66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADB24BED90500D685D1 /* MainTabBarController.swift */; };
 		66066ADE24BEDD9B00D685D1 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADD24BEDD9B00D685D1 /* SearchMusicViewController.swift */; };
 		66420AF224D19DFD0047BE85 /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66420AF124D19DFD0047BE85 /* CMTime + Extension.swift */; };
+		66420AF424D2BB550047BE85 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66420AF324D2BB550047BE85 /* Nib.swift */; };
 		66E9995024C1F7FD0062F410 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9994F24C1F7FD0062F410 /* FooterView.swift */; };
 		66E9995324C200F10062F410 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9995224C200F10062F410 /* TrackDetailView.swift */; };
 		66E9995524C201080062F410 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E9995424C201080062F410 /* TrackDetailView.xib */; };
@@ -46,6 +47,7 @@
 		66066ADB24BED90500D685D1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		66066ADD24BEDD9B00D685D1 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
 		66420AF124D19DFD0047BE85 /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
+		66420AF324D2BB550047BE85 /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 		66E9994F24C1F7FD0062F410 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		66E9995224C200F10062F410 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		66E9995424C201080062F410 /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				66F7D69724C1B61F0042589F /* UIViewController+Storyboard.swift */,
 				66420AF124D19DFD0047BE85 /* CMTime + Extension.swift */,
+				66420AF324D2BB550047BE85 /* Nib.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				66E9995024C1F7FD0062F410 /* FooterView.swift in Sources */,
 				66420AF224D19DFD0047BE85 /* CMTime + Extension.swift in Sources */,
 				66F7D69E24C1DD1A0042589F /* TrackCell.swift in Sources */,
+				66420AF424D2BB550047BE85 /* Nib.swift in Sources */,
 				66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */,
 				66F7D68F24C1A65E0042589F /* SearchWorker.swift in Sources */,
 				66F7D69224C1A65E0042589F /* SearchViewController.swift in Sources */,
