@@ -30,6 +30,7 @@ class SearchViewController: UIViewController, SearchDisplayLogic {
     
     // создаем footer View
     private lazy var footerView = FooterView()
+    weak var tabBarDelegate: MainTabBarControllerDelegate?
     
     // MARK: Setup
     
@@ -107,11 +108,13 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         let cellViewModel = searchViewModel.cells[indexPath.row]
         print("cellViewModel.trackName: ", cellViewModel.trackName)
         
-        let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-        let trackDetailsView = Bundle.main.loadNibNamed("TrackDetailView", owner: self, options: nil)?.first as! TrackDetailView
-        trackDetailsView.set(viewModel: cellViewModel)
-        trackDetailsView.delegate = self
-        window?.addSubview(trackDetailsView)
+        self.tabBarDelegate?.maximizeTrackDetailController(viewModel: cellViewModel)
+        
+//        let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+//        let trackDetailsView: TrackDetailView = TrackDetailView.loadFromNib()
+//        trackDetailsView.set(viewModel: cellViewModel)
+//        trackDetailsView.delegate = self
+//        window?.addSubview(trackDetailsView)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
