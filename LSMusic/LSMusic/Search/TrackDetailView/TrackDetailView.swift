@@ -50,6 +50,9 @@ class TrackDetailView: UIView {
         let scale: CGFloat = 0.8
         trackImageView.transform = CGAffineTransform(scaleX: scale, y: scale)
         trackImageView.layer.cornerRadius = 5
+        miniPlayPauseButton.imageEdgeInsets = .init(top: 11, left: 11, bottom: 11, right: 11)
+        
+        setupGestures()
     }
     
     // MARK: - Setup
@@ -66,6 +69,21 @@ class TrackDetailView: UIView {
         guard let url = URL(string: string600 ?? "") else { return }
         miniTrackImageView.sd_setImage(with: url, completed: nil)
         trackImageView.sd_setImage(with: url, completed: nil)
+    }
+    
+    // установка жестов
+    private func setupGestures() {
+        miniTrackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapMaximized)))
+        miniTrackView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
+    }
+    
+    @objc private func handlePan() {
+        print("pan gesture")
+    }
+    
+    @objc private func handleTapMaximized() {
+        print("tapping to maximaze")
+        self.tabBarDelegate?.maximizeTrackDetailController(viewModel: nil)
     }
     
     private func playTrack(previewUrl: String?) {
