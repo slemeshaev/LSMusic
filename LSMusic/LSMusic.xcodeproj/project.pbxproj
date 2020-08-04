@@ -15,6 +15,7 @@
 		66066AD424BED83E00D685D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66066AD224BED83E00D685D1 /* LaunchScreen.storyboard */; };
 		66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADB24BED90500D685D1 /* MainTabBarController.swift */; };
 		66066ADE24BEDD9B00D685D1 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADD24BEDD9B00D685D1 /* SearchMusicViewController.swift */; };
+		663B31BB24D95B7500806E70 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B31BA24D95B7500806E70 /* Library.swift */; };
 		66420AF224D19DFD0047BE85 /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66420AF124D19DFD0047BE85 /* CMTime + Extension.swift */; };
 		66420AF424D2BB550047BE85 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66420AF324D2BB550047BE85 /* Nib.swift */; };
 		66E9995024C1F7FD0062F410 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9994F24C1F7FD0062F410 /* FooterView.swift */; };
@@ -46,6 +47,7 @@
 		66066AD524BED83E00D685D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66066ADB24BED90500D685D1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		66066ADD24BEDD9B00D685D1 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
+		663B31BA24D95B7500806E70 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		66420AF124D19DFD0047BE85 /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
 		66420AF324D2BB550047BE85 /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 		66E9994F24C1F7FD0062F410 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				66066AC724BED83E00D685D1 /* AppDelegate.swift */,
 				66066AC924BED83E00D685D1 /* SceneDelegate.swift */,
+				663B31BA24D95B7500806E70 /* Library.swift */,
 				66066ADB24BED90500D685D1 /* MainTabBarController.swift */,
 				66F7D68624C1A5890042589F /* Services */,
 				66F7D67724C1A1660042589F /* Search */,
@@ -339,6 +342,7 @@
 				66066ACA24BED83E00D685D1 /* SceneDelegate.swift in Sources */,
 				66F7D68E24C1A65E0042589F /* SearchPresenter.swift in Sources */,
 				66F7D67624C198190042589F /* NetworkService.swift in Sources */,
+				663B31BB24D95B7500806E70 /* Library.swift in Sources */,
 				66E9995324C200F10062F410 /* TrackDetailView.swift in Sources */,
 				66F7D69824C1B61F0042589F /* UIViewController+Storyboard.swift in Sources */,
 			);
