@@ -10,7 +10,53 @@ import SwiftUI
 
 struct Library: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                GeometryReader { geometry in
+                    HStack(spacing: 20) {
+                        Button(action: {
+                            print("12345")
+                        }, label: {
+                            Image(systemName: "play.fill")
+                                .frame(width: geometry.size.width / 2 - 10, height: 50)
+                                .accentColor(Color.init(#colorLiteral(red: 0, green: 0.2784313725, blue: 0.4078431373, alpha: 1)))
+                                .background(Color.init(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
+                                .cornerRadius(10)
+                        })
+                        Button(action: {
+                            print("5675")
+                        }, label: {
+                            Image(systemName: "arrow.2.circlepath")
+                                .frame(width: geometry.size.width / 2 - 10, height: 50)
+                                .accentColor(Color.init(#colorLiteral(red: 0, green: 0.2784313725, blue: 0.4078431373, alpha: 1)))
+                                .background(Color.init(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
+                                .cornerRadius(10)
+                        })
+                    }
+                }.padding().frame(height: 50)
+                Divider().padding(.leading).padding(.trailing)
+                List {
+                    LibraryCell()
+                    Text("First track")
+                    Text("First track")
+                }
+            }
+                
+                .navigationBarTitle("Моя музыка")
+        }
+    }
+}
+
+struct LibraryCell: View {
+    var body: some View {
+        HStack {
+            Image("trackImage").resizable().frame(width: 60, height: 60).cornerRadius(2)
+            VStack {
+                Text("Имя трека")
+                Text("Имя артиста")
+            }
+        }
+        
     }
 }
 
