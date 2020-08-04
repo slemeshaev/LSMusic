@@ -52,6 +52,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="addTrackOutlet" destination="lkS-cw-8gR" id="68i-KA-pEw"/>
                 <outlet property="artistNameLabel" destination="3pK-66-Sj1" id="lGr-rI-Uyy"/>
                 <outlet property="collectionNameLabel" destination="6F2-jM-5Ra" id="zjm-C4-QZI"/>
                 <outlet property="trackImageView" destination="BWc-0u-zI6" id="gzt-Va-Xpq"/>
