@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		66066ADC24BED90500D685D1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADB24BED90500D685D1 /* MainTabBarController.swift */; };
 		66066ADE24BEDD9B00D685D1 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66066ADD24BEDD9B00D685D1 /* SearchMusicViewController.swift */; };
 		663B31BB24D95B7500806E70 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B31BA24D95B7500806E70 /* Library.swift */; };
+		663B31BD24D9B32F00806E70 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B31BC24D9B32F00806E70 /* UserDefaults+Extension.swift */; };
+		663B31C024D9B84B00806E70 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 663B31BF24D9B84B00806E70 /* URLImage */; };
 		66420AF224D19DFD0047BE85 /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66420AF124D19DFD0047BE85 /* CMTime + Extension.swift */; };
 		66420AF424D2BB550047BE85 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66420AF324D2BB550047BE85 /* Nib.swift */; };
 		66E9995024C1F7FD0062F410 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9994F24C1F7FD0062F410 /* FooterView.swift */; };
@@ -48,6 +50,7 @@
 		66066ADB24BED90500D685D1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		66066ADD24BEDD9B00D685D1 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
 		663B31BA24D95B7500806E70 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		663B31BC24D9B32F00806E70 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		66420AF124D19DFD0047BE85 /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
 		66420AF324D2BB550047BE85 /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 		66E9994F24C1F7FD0062F410 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663B31C024D9B84B00806E70 /* URLImage in Frameworks */,
 				85EF1EB55B8A08122CCD9044 /* Pods_LSMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +190,7 @@
 			children = (
 				66F7D69B24C1DCE20042589F /* TrackCell.xib */,
 				66F7D69D24C1DD1A0042589F /* TrackCell.swift */,
+				663B31BC24D9B32F00806E70 /* UserDefaults+Extension.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -225,6 +230,9 @@
 			dependencies = (
 			);
 			name = LSMusic;
+			packageProductDependencies = (
+				663B31BF24D9B84B00806E70 /* URLImage */,
+			);
 			productName = LSMusic;
 			productReference = 66066AC424BED83E00D685D1 /* LSMusic.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 66066ABB24BED83D00D685D1;
+			packageReferences = (
+				663B31BE24D9B84B00806E70 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 66066AC524BED83E00D685D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +349,7 @@
 				66F7D68F24C1A65E0042589F /* SearchWorker.swift in Sources */,
 				66F7D69224C1A65E0042589F /* SearchViewController.swift in Sources */,
 				66F7D69024C1A65E0042589F /* SearchRouter.swift in Sources */,
+				663B31BD24D9B32F00806E70 /* UserDefaults+Extension.swift in Sources */,
 				66F7D69124C1A65E0042589F /* SearchModels.swift in Sources */,
 				66066ACA24BED83E00D685D1 /* SceneDelegate.swift in Sources */,
 				66F7D68E24C1A65E0042589F /* SearchPresenter.swift in Sources */,
@@ -546,6 +558,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		663B31BE24D9B84B00806E70 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		663B31BF24D9B84B00806E70 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 663B31BE24D9B84B00806E70 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 66066ABC24BED83D00D685D1 /* Project object */;
 }

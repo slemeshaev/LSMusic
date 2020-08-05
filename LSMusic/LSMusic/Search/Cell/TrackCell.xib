@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -40,9 +40,19 @@
                         <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkS-cw-8gR">
+                        <rect key="frame" x="378" y="34" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <color key="tintColor" red="0.0" green="0.2784313725" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button" image="Add"/>
+                        <connections>
+                            <action selector="addTrackAction:" destination="Vhb-9h-Wfg" eventType="touchUpInside" id="Y0m-w5-6eA"/>
+                        </connections>
+                    </button>
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="addTrackOutlet" destination="lkS-cw-8gR" id="68i-KA-pEw"/>
                 <outlet property="artistNameLabel" destination="3pK-66-Sj1" id="lGr-rI-Uyy"/>
                 <outlet property="collectionNameLabel" destination="6F2-jM-5Ra" id="zjm-C4-QZI"/>
                 <outlet property="trackImageView" destination="BWc-0u-zI6" id="gzt-Va-Xpq"/>
@@ -51,4 +61,7 @@
             <point key="canvasLocation" x="-130.43478260869566" y="36.160714285714285"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Add" width="16" height="16"/>
+    </resources>
 </document>
